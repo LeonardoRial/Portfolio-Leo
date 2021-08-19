@@ -1,3 +1,5 @@
+@use '../mixins/index' as *;
+
 .navbar {
   position: sticky;
   top: 0;
@@ -7,23 +9,56 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 
   &-logo {
     flex: 1;
     padding-left: 5rem;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    @include mobile(small) {
+      padding-left: 2rem;
+    }
   }
 
   &-links {
     flex: 1;
     padding-right: 5rem;
+    height: inherit;
 
     &-list {
+      height: inherit;
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       & a:hover {
         color: var(--secondary-colour);
       }
+    }
+  }
+}
+
+.burger {
+  height: inherit;
+  width: 2rem;
+  margin-right: 5rem;
+  display: flex;
+  align-items: center;
+  @include mobile(small) {
+    margin-right: 2rem;
+  }
+  &-container {
+    height: 2rem;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    & span {
+      width: 2rem;
+      height: 2px;
+      background: var(--primary-colour);
     }
   }
 }
