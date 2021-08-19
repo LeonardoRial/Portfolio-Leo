@@ -40,21 +40,26 @@
   }
 }
 
+//burger menu
 .burger {
   height: inherit;
   width: 2rem;
   margin-right: 5rem;
   display: flex;
   align-items: center;
+
   @include mobile(small) {
     margin-right: 2rem;
   }
+
   &-container {
     height: 2rem;
     width: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    cursor: pointer;
+
     & span {
       width: 2rem;
       height: 2px;

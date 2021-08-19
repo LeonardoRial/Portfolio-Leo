@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"script.js"}
+{"version":3,"sources":["script.js"],"names":["burger","document","querySelector","links","burgerAnimation","classList","toggle","addEventListener"],"mappings":"AAAA,MAAMA,OAASC,SAASC,cAAc,qBAChCC,MAAQF,SAASC,cAAc,iBAIrC,SAASE,kBACPJ,OAAOK,UAAUC,OAAO,aACxBH,MAAME,UAAUC,OAAO,QAGzBN,OAAOO,iBAAiB,QAASH","file":"script.js"}
