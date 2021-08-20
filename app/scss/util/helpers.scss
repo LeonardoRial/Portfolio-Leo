@@ -5,25 +5,26 @@
   @include mobile(large) {
     background: var(--bg);
     position: absolute;
-    top: 0%;
-    right: 0;
-    width: 50vw;
-    height: 50vh;
-    padding-right: 5rem;
-    visibility: hidden;
+    top: 00%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 0%;
+    height: 60vh;
+    padding: 3rem 0;
     opacity: 0;
+    visibility: hidden;
     z-index: -1;
 
     @include mobile(small) {
-      width: 100%;
-      height: 60vh;
+      height: 100vh;
       padding: 0;
     }
 
     & ul {
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-evenly;
+
       @include mobile(small) {
         align-items: center;
       }
@@ -56,8 +57,9 @@
 
 .show-menu {
   z-index: 1;
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
+  width: 100vw;
 }
 
 //remove scrolling when showing menu
