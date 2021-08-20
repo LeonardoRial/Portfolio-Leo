@@ -8,8 +8,10 @@ h1 {
   font-size: 2rem;
 }
 
-h2 {
-  font-size: 3.5rem;
+h2,
+h3 {
+  color: var(--primary-colour);
+  letter-spacing: 2px;
 }
 
 a {
