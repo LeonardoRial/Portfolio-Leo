@@ -1,2 +1,2 @@
-const burger=document.querySelector(".burger-container"),links=document.querySelector(".navbar-links");function burgerAnimation(){burger.classList.toggle("animation"),links.classList.toggle("show")}burger.addEventListener("click",burgerAnimation);
+const burger=document.querySelector(".burger-container"),links=document.querySelector(".navbar-links"),body=document.querySelector("body"),navbar=document.querySelector(".navbar");function burgerAnimation(){burger.classList.toggle("burger-animation"),links.classList.toggle("show-menu"),body.classList.toggle("overflow")}burger.addEventListener("click",burgerAnimation);
 //# sourceMappingURL=script.js.map
