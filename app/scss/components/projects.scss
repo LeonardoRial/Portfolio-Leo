@@ -3,12 +3,23 @@
   padding-left: 5rem;
   padding-top: 5rem;
 
-  & .tip-calculator {
+  & .weather {
+    display: flex;
+    flex-direction: column;
     h2 {
       font-size: 2.2rem;
+      padding-bottom: 1rem;
     }
     p {
       font-size: 1.5rem;
+      padding-bottom: 2.5rem;
+    }
+    a {
+      padding-bottom: 1rem;
+
+      &:hover {
+        color: var(--secondary-colour);
+      }
     }
   }
 }
