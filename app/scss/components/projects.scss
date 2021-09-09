@@ -1,11 +1,13 @@
 #projects {
   height: 90vh;
   padding-left: 5rem;
-  padding-top: 5rem;
 
-  & .weather {
+  & .weather,
+  & .photo-web {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    padding-top: 5rem;
     h2 {
       font-size: 2.2rem;
       padding-bottom: 1rem;
