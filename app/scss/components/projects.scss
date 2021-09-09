@@ -1,23 +1,44 @@
+@use '../mixins/index' as *;
+
 #projects {
   height: 90vh;
   padding-left: 5rem;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include mobile(small) {
+    padding: 0 2rem;
+    grid-template-columns: 1fr;
+  }
 
   & .weather,
   & .photo-web {
-    width: 50%;
+    text-align: center;
+    align-self: flex-start;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+    @include mobile(small) {
+      padding-top: 2rem;
+    }
     h2 {
       font-size: 2.2rem;
       padding-bottom: 1rem;
+      @include mobile(small) {
+        font-size: 1.5rem;
+      }
     }
     p {
       font-size: 1.5rem;
       padding-bottom: 2.5rem;
+      @include mobile(small) {
+        display: none;
+      }
     }
     a {
       padding-bottom: 1rem;
+      color: var(--secondary-colour);
 
       &:hover {
         color: var(--secondary-colour);
