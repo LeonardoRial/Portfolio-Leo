@@ -4,7 +4,14 @@ const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
 const linksList = document.querySelectorAll(".navbar-links-list");
 
-//burger animation
+//events listeners
+burger.addEventListener("click", burgerAnimation);
+
+for (const link of linksList) {
+  link.addEventListener("click", burgerAnimation);
+}
+
+//functions
 
 function burgerAnimation() {
   burger.classList.toggle("burger-animation");
@@ -12,8 +19,4 @@ function burgerAnimation() {
   body.classList.toggle("overflow");
 }
 
-burger.addEventListener("click", burgerAnimation);
-
-for (const link of linksList) {
-  link.addEventListener("click", burgerAnimation);
-}
+//Submitting form

@@ -1,7 +1,10 @@
 @use '../mixins/index' as *;
+:root {
+  --font: "Montserrat", sans-serif;
+}
 
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font);
 }
 
 h1 {
@@ -29,6 +32,7 @@ a {
 li {
   list-style: none;
 }
+
 p {
   color: var(--secondary-colour);
 }

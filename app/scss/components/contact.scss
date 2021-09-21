@@ -49,11 +49,9 @@
       font-size: 1.2rem;
       outline: none;
       border: none;
+      padding-left: 0.5rem;
       @include mobile(small) {
         width: 100%;
-      }
-      &:focus {
-        box-shadow: 0 0 30px var(--secondary-colour);
       }
     }
 
@@ -82,9 +80,7 @@
       font-size: 1.2rem;
       outline: none;
       border: none;
-      &:focus {
-        box-shadow: 0 0 30px var(--secondary-colour);
-      }
+      padding: 1rem;
       @include mobile(small) {
         width: 100%;
       }

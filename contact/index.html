@@ -36,18 +36,23 @@
     </nav>
     <section id="contact">
       <div class="contact-container">
-        <form action="">
+        <form action="https://formspree.io/f/mvodlvqj" method="POST">
           <div class="form">
             <label for="name">Name</label>
-            <input type="text" id="name" required />
+            <input name="name" type="text" id="name" required />
           </div>
           <div class="form">
             <label for="email">Email</label>
-            <input type="email" id="email" required />
+            <input type="email" name="_replyto" id="email" required />
           </div>
           <div class="form">
             <label for="message">Message</label>
-            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
             <button type="submit">Submit</button>
           </div>
         </form>
