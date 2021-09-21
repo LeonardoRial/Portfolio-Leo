@@ -11,10 +11,10 @@ body {
   background-image: url(/img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   background-attachment: fixed;
   @include mobile(small) {
-    background-position: -680px;
+    background-position: -700px;
   }
 
   &::after {
