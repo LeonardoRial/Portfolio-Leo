@@ -1,4 +1,4 @@
 [build]
-  command = "gulp all"
+  command = "gulp"
   functions = "lambda"
   publish = "build"
